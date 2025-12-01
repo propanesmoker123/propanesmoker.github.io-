@@ -1,1 +1,89 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN Лабораторная - Моя Страница</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🌐 Добро пожаловать!</h1>
+            <p class="subtitle">Мой экспериментальный сайт с Cloudflare CDN</p>
+        </header>
 
+        <main class="content">
+            <section class="info-card">
+                <h2>О проекте</h2>
+                <p>Этот сайт создан в рамках лабораторных работ по изучению технологий CDN (Content Delivery Network). Весь контент доставляется через глобальную сеть Cloudflare, что обеспечивает:</p>
+                <ul>
+                    <li>⚡ Быструю загрузку из любой точки мира</li>
+                    <li>🛡️ Защиту от DDoS-атак</li>
+                    <li>🔒 Безопасное HTTPS-соединение</li>
+                    <li>📊 Оптимизацию и сжатие контента</li>
+                </ul>
+            </section>
+
+            <section class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Серверов по всему миру</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Время доступности</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">~50ms</span>
+                    <span class="stat-label">Средняя задержка</span>
+                </div>
+            </section>
+
+            <section class="image-showcase">
+                <h2>Тестовое изображение</h2>
+                <div class="image-wrapper">
+                    <img src="test-image.jpg" alt="Тестовое изображение для проверки кэширования CDN" id="mainImage">
+                    <p class="image-caption">Это изображение кэшируется CDN и загружается с ближайшего сервера</p>
+                </div>
+            </section>
+
+            <section class="tech-info">
+                <h2>Технологии</h2>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h3>GitHub Pages</h3>
+                        <p>Бесплатный хостинг статических сайтов</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3>Cloudflare CDN</h3>
+                        <p>Глобальная сеть доставки контента</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3>DNS Management</h3>
+                        <p>Управление доменными именами</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3>WAF & Security</h3>
+                        <p>Защита веб-приложений</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Лабораторная работа по CDN | 2025</p>
+            <p>Версия сайта: <span id="version">1.0</span></p>
+        </footer>
+    </div>
+
+    <script>
+        // Простой скрипт для отображения информации о загрузке
+        window.addEventListener('load', function() {
+            const loadTime = performance.now();
+            console.log(`Страница загружена за ${loadTime.toFixed(2)}ms`);
+        });
+    </script>
+</body>
+</html>
